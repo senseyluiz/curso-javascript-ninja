@@ -81,18 +81,19 @@ Ainda com a função acima, imprima a quantidade de páginas de um livro qualque
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
-"O livro  Pai Rico Pai Pobre tem " + book("Pai Rico Pai Pobre").quantidadePaginas + " páginas!"
+var nomeLivro = "Pai Rico Pai Pobre";
+"O livro  "+ nomeLivro +" " + book(nomeLivro).quantidadePaginas + " páginas!"
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-"O autor do livro Pai Rico Pai Pobre é " + book('Pai Rico Pai Pobre').autor + "."
+"O autor do livro " + nomeLivro + " é " + book( nomeLivro ).autor + "."
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
 a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
-"O livro Pai Rico Pai Pobre foi publicado pela editora " +book('Pai Rico Pai Pobre').editora + "."
+"O livro " + nomeLivro +" foi publicado pela editora " +book( nomeLivro ).editora + "."
