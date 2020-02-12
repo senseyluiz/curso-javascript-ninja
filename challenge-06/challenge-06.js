@@ -4,7 +4,7 @@ para começar o desafio.
 Declare uma variável chamada `championship` que receberá o nome do campeonato,
 e imprima o nome desse campeonato no console.
 */
-// ?
+var championship = 'Campeonato Carioca';
 
 /*
 Declare uma variável chamada `teams`, que receberá um array com 5 elementos.
@@ -12,7 +12,7 @@ Os elementos serão nomes de times do campeonato escolhido, e os nomes devem
 estar na ordem em que eles aparecem na tabela no momento da solução desse
 desafio.
 */
-// ?
+var teams = ['Americano', 'América - RJ', 'Friburguense', 'Nova Iguaçu', 'Flamengo'];
 
 console.log( 'Times que estão participando do campeonato:', teams );
 
@@ -32,19 +32,33 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     - Se não houver time para a posição passada, deve retornar a mensagem:
     "Não temos a informação do time que está nessa posição."
 */
-// ?
+function showTeamPosition(n){
+    if(n - 1 < 5){
+     return 'O time que está em ' + n + 'º lugar é o ' + teams[n - 1] + '.'
+    }else{
+    return 'Não temos informações sobre o time dessa posição';
+    }
+ }
 
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
-// ?
+showTeamPosition(1);
+showTeamPosition(2);
+showTeamPosition(3);
+showTeamPosition(5);
+showTeamPosition(7);
 
 /*
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
 repetição "while".
 */
-// ?
+Var n = 20;
+while(n < 30){
+    console.log(n);
+    n += 1;
+};
 
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
@@ -58,9 +72,43 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     a frase:
     "Não temos o equivalente hexadecimal para [COR]."
 */
-// ?
+function convertToHex(cor){
+    var red = '#FF0000';
+    var blue ='#0000FF';
+    var orange = '#FFA500';
+    var yellow = '#FFFF00';
+    var green = '#008000';
+    switch(cor){
+        case 'red':
+            return 'O Hexadecimal da cor red é: ' + red;
+            break;
+        case 'blue':
+            return 'O Hexadecimal da cor red é: ' + blue;
+            break;
+        case 'orange':
+            return 'O Hexadecimal da cor red é: ' + orange;
+            break;
+        case 'yellow':
+            return 'O Hexadecimal da cor red é: ' + yellow;
+            break;
+        case 'green':
+            return 'O Hexadecimal da cor red é: ' + green;
+            break;
+        default:
+            return 'Não temos o Hexadecimal correspondente para ' + cor;
+            
+    }
+    
+}
 
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
 */
-// ?
+convertToHex('red');
+convertToHex('dblue');
+convertToHex('green');
+convertToHex('orange');
+convertToHex('yellow');
+convertToHex('dark red');
+convertToHex('black');
+convertToHex('white');
